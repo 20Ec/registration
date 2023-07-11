@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 5% 20%;
+    }
+    form,h1{
+        background-color: green;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    label{
+        font-size: 30px;
+        font-weight: 400;
+    }
+    input, button,select{
+        width: 200px;
+        height: 30px;
+        border-radius: 15px;
+    }
+    button{
+        color: rgb(15, 29, 29);
+        background-color: blue;
+    }
+    button:hover{
+        background-color: red;
+    }
+</style>
+<body>
+     <h1>Registration form</h1>
+     <form action="https://formspree.io/f/meqbqzro"  method="POST" text-align="centre">
+        <h1>Farewall party survey form</h1>
+        <label for="name">Name</label><br>
+        <input type="text"  name="name"><br>
+        <label for="mail">mail id</label><br>
+        <input type="mail" name="mail" required><br>
+        <label for="age">Age</label><br>
+        <input type="tel" name="Age" required><br>
+        <label for="dis"> will you attend the party</label><br>
+        
+        <select name="dis">
+        <option value="yes">yes</option>
+        <option value="no">no</option>
+        <option value="maybe">maybe</option>
+   </select><br>
+    <label for="num"> contact number</label>
+<br>
+    <input type="tel" name="num" required><br>
+   <textarea  name="suggestion" cols="10" rows="5" required>
+    </textarea><br>
+  <button type="submit" >submit</button><br><br>
+
+
+
+     </form>
+</body>
+</html>
